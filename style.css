@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'jose';
+  src: url('Fonts/JosefinSans.ttf');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+
+#top {
+    width:100%;
+    background-color:gray;
+    padding-bottom:8px;
+    padding-top:8px;
+}
+
+ #title {
+    font-size:300%;
+    text-decoration:none;
+    color:black;
+    font-family:jose;
+ }
+
+ nav {
+    text-decoration:none;
+    display: flex;
+    font-size:200%;
+    width:100%;
+    color:black;
+    list-style-type: none;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color:lightgray;
+ }
+ 
+ .navitem {
+    padding-top:6px;
+    font-family:jose;
+    text-decoration:none;
+    color:black;
+    position: relative;
+    display: block;
+    width: auto;
+    padding-right:8px;
+    padding-left:8px;
+    margin-left:1px;
+    margin-right:1px;
+    background-color:rgb(240, 240, 240);
+ }
+
+ .main {
+    margin:auto;
+    text-align:center;
+    padding-bottom:64px;
+ }
+ .main-title {
+    padding-top:6px;
+    font-family:jose;
+
+ }
+
+ .main-par {
+    font-size:120%;
+
+ }
+
+ footer {
+    position:relative;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    background-color:black;
+    color:orange;
+    margin-top:16px;
+ }
+
+ #banner {
+    max-width:100;
+    height:256px; 
+    width:100%;
+    display:block;
+    object-fit:cover;
+ }
+ #store-banner {
+    max-width:100%;
+    height:256px; 
+    width:100%;
+    object-fit:cover;
+ }
+
+ #store-grid {
+    display:flex;
+
+
+ }
+
+ .item {
+    display:flex;
+    width:256px;
+    height:256px;
+    background:gray;
+ }
+
+ .item-img {
+    max-width:100%;
+    object-fit:cover;
+ }
