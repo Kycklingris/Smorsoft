@@ -95,19 +95,42 @@
  }
 
  #store-grid {
-    display:flex;
-
-
+    display:grid;
+    grid-auto-columns: auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    grid-auto-rows:auto;
+    grid-auto-flow:row dense;
+    background-color:lightgray;
  }
 
  .item {
-    display:flex;
-    width:256px;
-    height:256px;
-    background:gray;
+   display:grid;
+   width:100%;
+   background-color:white;
  }
 
  .item-img {
     max-width:100%;
     object-fit:cover;
+ }
+
+ .item-buttons {
+    display:flex;
+    justify-content: space-around;
+
+ }
+ 
+ .addToCart {
+   background-color:lightblue;
+   width:50%;
+   padding:4px;
+   text-align:center;
+ }
+
+ .buyNow {
+   background-color:green;
+   width:50%;
+   padding:4px;
+   text-align:center;
  }
