@@ -10,21 +10,28 @@
     box-sizing: border-box;
     padding:0;
     margin:0;
+    color:white;
+    background-color:rgba(70, 70, 70);
 }
 
 
 #top {
     width:100%;
-    background-color:gray;
+    background-color:#707991;
     padding-bottom:8px;
     padding-top:8px;
+    box-shadow: 0px 4px 8px black;
+    position: relative;
+    z-index: 10;
+
 }
 
  #title {
     font-size:300%;
     text-decoration:none;
-    color:black;
+    color:white;
     font-family:jose;
+    background-color: transparent;
  }
 
  nav {
@@ -36,7 +43,9 @@
     list-style-type: none;
     flex-wrap: nowrap;
     align-items: center;
-    background-color:lightgray;
+    background-color:transparent;
+    position: absolute;;
+     z-index: 2;
  }
  
  .navitem {
@@ -49,9 +58,13 @@
     width: auto;
     padding-right:8px;
     padding-left:8px;
-    margin-left:1px;
-    margin-right:1px;
-    background-color:rgb(240, 240, 240);
+    margin-left:4px;
+    margin-right:4px;
+    margin-top:8px;
+    background-color:rgba(255, 255, 255, 0.6);
+    padding:4px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.5);
  }
 
  .main {
@@ -62,7 +75,6 @@
  .main-title {
     padding-top:6px;
     font-family:jose;
-
  }
 
  .main-par {
@@ -71,13 +83,12 @@
  }
 
  footer {
-    position:relative;
+    position: absolute;
     bottom:0;
     width:100%;
     text-align:center;
-    background-color:black;
-    color:orange;
-    margin-top:16px;
+    background-color:Gray;
+    color:White;
  }
 
  #banner {
@@ -91,45 +102,52 @@
     max-width:100%;
     height:256px; 
     width:100%;
+    margin-top:8px;
     object-fit:cover;
+
  }
 
  #store-grid {
     display:grid;
     grid-auto-columns: auto;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 8px;
     grid-auto-rows:auto;
     grid-auto-flow:row dense;
-    background-color:lightgray;
  }
 
  .item {
    display:grid;
    width:100%;
-   background-color:white;
+   background-color: rgba(0, 0, 0, 0.3);
  }
 
  .item-img {
     max-width:100%;
     object-fit:cover;
+   background-color: rgba(0, 0, 0, 0.3);
+ }
+
+ .item-price{
+   background-color: rgba(0, 0, 0, 0.3);
+   font-size: 3.5ch;
  }
 
  .item-buttons {
     display:flex;
     justify-content: space-around;
-
+   background-color: rgba(0, 0, 0, 0.3);
  }
  
  .addToCart {
-   background-color:lightblue;
+   background-color:rgba(0, 230, 188, 0.6);
    width:50%;
    padding:4px;
    text-align:center;
  }
 
  .buyNow {
-   background-color:green;
+   background-color:rgba(27, 230, 0, 0.5);
    width:50%;
    padding:4px;
    text-align:center;
