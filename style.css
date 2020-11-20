@@ -1,10 +1,6 @@
-@font-face {
-  font-family: 'jose';
-  src: url('Fonts/JosefinSans.ttf');
-  font-weight: normal;
-  font-style: normal;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya&display=swap');
 
 * {
     box-sizing: border-box;
@@ -42,7 +38,7 @@ body {
     font-size:300%;
     text-decoration:none;
     color:white;
-    font-family:jose;
+    font-family: 'Monda', sans-serif;
     background-color: transparent;
     text-shadow:2px 2px 2px rgba(0, 0, 0, 0.378);
  }
@@ -64,8 +60,8 @@ body {
  }
  
   .navitem {
+    font-family: 'Mulish', sans-serif;
     padding-top:6px;
-    font-family:jose;
     text-decoration:none;
     color:white;
     position: relative;
@@ -74,7 +70,6 @@ body {
     padding-left:8px;
     margin-left:4px;
     margin-right:4px;
-    margin-top:8px;
     background-color:transparent;
     border-radius:8px;
     text-shadow:2px 2px 2px rgba(0, 0, 0, 0.378);
@@ -101,7 +96,7 @@ body {
    top:0;
    left:0;
    width:100%;
-   height:100%;
+   height:200%;
    background-color:rgba(0, 0, 0, 0.823);
    z-index:20;
    flex-direction:column;
@@ -144,7 +139,7 @@ body {
     margin:2%;
  }
  .main-title {
-    font-family:jose;
+    font-family: 'Mulish', sans-serif;
     margin:1%;
  }
 
@@ -157,6 +152,7 @@ body {
  }
 
  .main-par {
+    font-family: sans-serif;
     font-size:120%;
     margin-left:8%;
     margin-right:8%;
@@ -164,6 +160,7 @@ body {
  }
 
  footer {
+    font-family: sans-serif;
     flex-shrink: 0;
     width:100%;
     text-align:center;
@@ -217,7 +214,8 @@ body {
  .item-text{
    display:flex;
    justify-content: space-between;
-   font-size: 3.5ch;
+   font-size: 3ch;
+   font-family: sans-serif;
    background-color:transparent;
    padding-left:2%;
    padding-right:2%;
@@ -252,3 +250,8 @@ body {
    text-align:center;
    border-radius: 0 8px 8px 0;
  }
+
+.socialimg {
+    width:70px;
+    height:70px;
+}
