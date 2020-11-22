@@ -271,28 +271,6 @@ body {
    background-color: transparent;
    bottom:0;
  }
- .item-buttons {
-    display:none;
-    justify-content: space-around;
-    background-color: transparent;
-    border-radius:8px;
- }
- 
- .addToCart {
-   background-color:rgba(0, 230, 188, 0.6);
-   width:50%;
-   padding:4px;
-   text-align:center;
-   border-radius:8px 0 0 8px;
- }
-
- .buyNow {
-   background-color:rgba(27, 230, 0, 0.5);
-   width:50%;
-   padding:4px;
-   text-align:center;
-   border-radius: 0 8px 8px 0;
- }
 
  .social {
     display:flex;
@@ -305,3 +283,4 @@ body {
     width:70px;
     height:70px;
 }
+
