@@ -11,9 +11,9 @@
 </head>
 <body>
     <div class = "content">
+    <a href="javascript:void(0);" class="hamicon" onclick="hamMenu()"> <i class="fa fa-bars"></i> </a>   
     <header id ="top">
         <a href = "index.html" id = "title">Smorsoft™</a>
-        <a href="javascript:void(0);" class="hamicon" onclick="hamMenu()"> <i class="fa fa-bars"></i> </a>   
             <nav id = "navbar">
                 <a class = "navitem" href="store.html">Store</a>
                 <a class = "navitem" href="goals.html">Goals</a>
@@ -23,7 +23,6 @@
             </nav>
     </header>
     <nav id = "hamscreen">
-            <a href="javascript:void(0);" class = "navitem" id = "home" onclick="hamMenu()">Close</a>
             <a class = "navitem" href="store.html">Store</a>
             <a class = "navitem" href="goals.html">Goals</a>
             <a class = "navitem" href="about.html">About</a>
@@ -33,58 +32,164 @@
 
 
     <div>
-        <img id = "store-banner" src="Images/store-banner.png" alt="en fin bild på andra världskriget">
+        <img id = "banner" src="Images/store-banner.png" alt="en fin bild på andra världskriget">
     </div>
 
     <div id = "store-grid">
-        <div class = "item">
+        <a class = "item" href="javascript:void(0);" onclick="itemExpand(1)">
             <img class = "item-img" src="Images/malte.png" alt="en fin bild på andra världskriget">
             <div class = "item-text">
                 <div class = "item-name">Ok Bommer Card:</div>
                 <div class = "item-price">19.99€</div>
             </div>
-        </div>
-         <div class = "item">
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+         <a class = "item" href="javascript:void(0);" onclick="itemExpand(2)">
             <img class = "item-img" src="Images/Niet.jpg" alt="en fin bild på andra världskriget">
             <div class = "item-text">
                 <div class = "item-name">Andra Världskriget:</div>
                 <div class = "item-price">19.99€</div>
             </div>
-        </div>
-         <div class = "item">
-            <img class = "item-img" src="Images/Niet.jpg" alt="en fin bild på andra världskriget">
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+         <a class = "item" href="javascript:void(0);" onclick="itemExpand(3)">
+            <img class = "item-img" src="Images/Bingbong.png" alt="en fin bild på andra världskriget">
             <div class = "item-text">
-                <div class = "item-name">Andra Världskriget:</div>
-                <div class = "item-price">19.99€</div></div>
-        </div>
-         <div class = "item">
-            <img class = "item-img" src="Images/Niet.jpg" alt="en fin bild på andra världskriget">
+                <div class = "item-name">Alexy:</div>
+                <div class = "item-price">19.99€</div>
+            </div>
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+         <a class = "item" href="javascript:void(0);" onclick="itemExpand(4)">
+            <img class = "item-img" src="Images/alrik.png" alt="en fin bild på andra världskriget">
+            <div class = "item-text">
+                <div class = "item-name">Video redigering:</div>
+                <div class = "item-price">0kr</div>
+            </div>
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+         <a class = "item" href="javascript:void(0);" onclick="itemExpand(5)">
+            <img class = "item-img" src="Images/Tobias2.jpg" alt="en fin bild på andra världskriget">
             <div class = "item-text">
                 <div class = "item-name">Andra Världskriget:</div>
                 <div class = "item-price">19.99€</div>
             </div>
-        </div>
-         <div class = "item">
-            <img class = "item-img" src="Images/Niet.jpg" alt="en fin bild på andra världskriget">
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+        <a class = "item" href="javascript:void(0);" onclick="itemExpand(6)">
+            <img class = "item-img" src="Images/Tobias3.jpg" alt="Tobias dricker loka crush">
             <div class = "item-text">
-                <div class = "item-name">Andra Världskriget:</div>
+                <div class = "item-name">Vätska:</div>
                 <div class = "item-price">19.99€</div>
             </div>
-        </div>
-        <div class = "item">
-            <img class = "item-img" src="Images/Niet.jpg" alt="en fin bild på andra världskriget">
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+        <a class = "item" href="javascript:void(0);" onclick="itemExpand(7)">
+            <img class = "item-img" src="Images/Algrens_Tobbe.png" alt="Tobias som en algrens bil">
             <div class = "item-text">
-                <div class = "item-name">Andra Världskriget:</div>
+                <div class = "item-name">Algrens bilar:</div>
+                <div class = "item-price">50kr</div>
+            </div>
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+        <a class = "item" href="javascript:void(0);" onclick="itemExpand(8)">
+            <img class = "item-img" src="Images/Villager.png" alt="Tobias som en algrens bil">
+            <div class = "item-text">
+                <div class = "item-name">Slav jul kort:</div>
                 <div class = "item-price">19.99€</div>
             </div>
-        </div>
-        <div class = "item">
-            <img class = "item-img" src="Images/malte.png" alt="en fin bild på andra världskriget">
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+        <a class = "item" href="javascript:void(0);" onclick="itemExpand(9)">
+            <img class = "item-img" src="Images/SnoppTobbe.png" alt="Tobias som en algrens bil">
             <div class = "item-text">
-                <div class = "item-name">Ok Bommer Card:</div>
+                <div class = "item-name">Slav jul kort:</div>
                 <div class = "item-price">19.99€</div>
             </div>
-        </div>
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+        <a class = "item" href="javascript:void(0);" onclick="itemExpand(10)">
+            <img class = "item-img" src="Images/a.png" alt="Tobias som en algrens bil">
+            <div class = "item-text">
+                <div class = "item-name">Slav jul kort:</div>
+                <div class = "item-price">19.99€</div>
+            </div>
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+        <a class = "item" href="javascript:void(0);" onclick="itemExpand(11)">
+            <img class = "item-img" src="Images/Ansikte.png" alt="Tobias som en algrens bil">
+            <div class = "item-text">
+                <div class = "item-name">Slav kort:</div>
+                <div class = "item-price">19.99€</div>
+            </div>
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+        <a class = "item" href="javascript:void(0);" onclick="itemExpand(12)">
+            <img class = "item-img" src="Images/Alrik_-_kopia.png" alt="Tobias som en algrens bil">
+            <div class = "item-text">
+                <div class = "item-name">Slav jul kort:</div>
+                <div class = "item-price">19.99€</div>
+            </div>
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+        <a class = "item" href="javascript:void(0);" onclick="itemExpand(13)">
+            <img class = "item-img" src="Images/Flugga.png" alt="Tobias som en algrens bil">
+            <div class = "item-text">
+                <div class = "item-name">Flugga:</div>
+                <div class = "item-price">19.99€</div>
+            </div>
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
+        <a class = "item" href="javascript:void(0);" onclick="itemExpand(14)">
+            <img class = "item-img" src="Images/Uganda12.png" alt="Tobias som en algrens bil">
+            <div class = "item-text">
+                <div class = "item-name">Flugga:</div>
+                <div class = "item-price">19.99€</div>
+            </div>
+            <div class = "item-buttons">
+                <a class = "addToCart"></a>
+                <a class = "buyNow"></a>
+            </div>
+        </a>
     </div>
     </div>
     <footer><p>Copyright© är 100% existerande på denna sida. Så liksom, baxa den inte.</p></footer>
