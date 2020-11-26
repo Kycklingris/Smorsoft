@@ -6,6 +6,18 @@ function hamMenu() {
     x.style.display = "flex";
     }
 }
+var input = document.getElementById("search");
+var items = document.getElementsByClassName("item-name");
+var items2 = document.getElementsByClassName("item")
+if (input.length > 0) {
+  for (i = 0; i < items.length; i++) {
+    var item = items[i]
+    if (input != item.substring(0, input.length)) {
+      items2[i].display = "none"
+    }
+  }
+}
+
 
 function itemExpand(id) {
   var y = document.getElementsByClassName("item")[id-1];

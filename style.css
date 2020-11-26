@@ -129,6 +129,7 @@ body {
 
  #store-grid {
     margin:1%;
+    margin-top:0.5%;
     display:grid;
     grid-auto-columns: auto;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
@@ -282,5 +283,15 @@ body {
 .socialimg {
     width:70px;
     height:70px;
+}
+
+input {
+   right:8px;
+   margin-left:4px;
+   margin-right:4px;
+   padding:0.5%;
+   border-radius:8px;
+   width:30%;
+   z-index:6;
 }
 
