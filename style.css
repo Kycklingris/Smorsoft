@@ -295,3 +295,26 @@ input {
    z-index:6;
 }
 
+#wowmap {
+    width:100%;
+    overflow:hidden;
+    border:1px solid black;
+}
+
+#zoomer {
+   top:0;
+   left:0;
+   z-index:16;
+   position:fixed;
+   width:300px;
+   height:300px;
+   overflow:hidden;
+   pointer-events: none;
+   display:none;
+   border-style:groove;
+   border-width:4px;
+}
+#zoomerimg {
+   width:7000%;
+   pointer-events: none;
+}

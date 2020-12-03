@@ -9,6 +9,8 @@ function hamMenu() {
 var input = document.getElementById("search");
 var items = document.getElementsByClassName("item-name");
 var items2 = document.getElementsByClassName("item")
+
+/*
 if (input.length > 0) {
   for (i = 0; i < items.length; i++) {
     var item = items[i]
@@ -17,7 +19,7 @@ if (input.length > 0) {
     }
   }
 }
-
+*/
 
 function itemExpand(id) {
   var y = document.getElementsByClassName("item")[id-1];

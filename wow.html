@@ -6,7 +6,7 @@
     <title>Smorsoft™</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
     <link rel="icon" href="Images/tobbeg.png">
 </head>
 <body>
@@ -33,14 +33,44 @@
         </nav>  
 
     <div>
-
         <img id = "banner" src="Images/Niet.jpg" alt="en fin bild på andra världskriget">
+    </div>
 
+    <div id = "zoomer">
+        <img src = "Images/WoW Classic Map.jpg" alt="Wow classic map" id = "zoomerimg">
     </div>
-        <div class = "zoom-without-container">
-        <img src = "Images/WoW Classic Map.jpg" alt="Wow classic map" id = "wowmap">
-    </div>
+    <a href = "javascript:void(0)" onclick ="mappress()">
+    <img src = "Images/WoW Classic Map.jpg" alt="Wow classic map" id = "wowmap">
+    </a>
     </div>
     <footer><p>Copyright© är 100% existerande på denna sida. Så liksom, baxa den inte.</p></footer>
+
+    <script>
+        var mapboundries = document.getElementById("wowmap")
+        var zoomerimg = document.getElementById("zoomerimg")
+        var zoomer = document.getElementById("zoomer")
+        document.onmousemove = function(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            zoomer.style.marginLeft = x + "px"
+            zoomer.style.marginTop = y + "px"
+            y = y  + window.scrollY - mapboundries.offsetTop;
+            var translatex = x / mapboundries.clientWidth
+            var translatey = y / mapboundries.clientHeight
+
+            var translatex = translatex * zoomerimg.clientWidth
+            var translatey = translatey * zoomerimg.clientHeight
+            zoomerimg.style.transform = 'translateX(-' + translatex + 'px)'
+            zoomerimg.style.transform += 'translateY(-' + translatey + 'px)'
+
+        }
+        function mappress() {
+            if (zoomer.style.display == "inline") {
+                zoomer.style.display = "none"
+            } else {
+                zoomer.style.display = "inline"
+            }
+        }
+    </script>
 </body>
 </html>
