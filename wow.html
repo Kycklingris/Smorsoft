@@ -62,8 +62,8 @@
             var translatex = x / mapboundries.clientWidth
             var translatey = y / mapboundries.clientHeight
 
-            var translatex = translatex * zoomerimg.clientWidth
-            var translatey = translatey * zoomerimg.clientHeight
+            var translatex = translatex * zoomerimg.clientWidth-150
+            var translatey = translatey * zoomerimg.clientHeight-150
             zoomerimg.style.transform = 'translateX(-' + translatex + 'px)'
             zoomerimg.style.transform += 'translateY(-' + translatey + 'px)'
 
