@@ -315,6 +315,13 @@ input {
    border-width:4px;
 }
 #zoomerimg {
-   width:7000%;
+   width:4000%;
    pointer-events: none;
+}
+
+.slidecontainer {
+   position:fixed;
+   background-color:transparent;
+   bottom:4px;
+   width:50%;
 }
