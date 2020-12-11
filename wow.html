@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smorsoft™</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+    <link rel="icon" href="Images/tobbeg.png">
+</head>
+<body>
+    <div class = "content">
+    <a href="javascript:void(0);" class="hamicon" onclick="hamMenu()"> <i class="fa fa-bars"></i> </a> 
+    <header id ="top">
+        <a href = "index.html" id = "title">Smorsoft™</a>
+            <nav id = "navbar">
+                <a class = "navitem" href="store.html">Store</a>
+                <a class = "navitem" href="goals.html">Goals</a>
+                <a class = "navitem" href="about.html">About</a>
+                <a class = "navitem" href="join.html">Join us</a>
+                <a class = "navitem" href="contact.html">Contact</a>
+                <a class = "navitem" href="wow.html">WoW Classic</a>
+            </nav>
+    </header>
+    <nav id = "hamscreen">
+            <a class = "navitem" href="store.html">Store</a>
+            <a class = "navitem" href="goals.html">Goals</a>
+            <a class = "navitem" href="about.html">About</a>
+            <a class = "navitem" href="join.html">Join us</a>
+            <a class = "navitem" href="contact.html">Contact</a>
+            <a class = "navitem" href="wow.html">WoW Classic</a>
+        </nav>  
+
+    <div>
+        <img id = "banner" src="Images/Niet.jpg" alt="en fin bild på andra världskriget">
+    </div>
+
+    <div id = "zoomer">
+        <img src = "Images/WoW Classic Map.jpg" alt="Wow classic map" id = "zoomerimg">
+    </div>
+    <a href = "javascript:void(0)" onclick ="mappress()">
+    <img src = "Images/WoW Classic Map.jpg" alt="Wow classic map" id = "wowmap">
+    </a>
+    </div>
+    <footer><p>Copyright© är 100% existerande på denna sida. Så liksom, baxa den inte.</p></footer>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("zoomerimg");
+        var mapboundries = document.getElementById("wowmap")
+        var zoomerimg = document.getElementById("zoomerimg")
+        var zoomer = document.getElementById("zoomer")
+        document.onmousemove = function(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            zoomer.style.marginLeft = x + "px"
+            zoomer.style.marginTop = y + "px"
+            y = y  + window.scrollY - mapboundries.offsetTop;
+            var translatex = x / mapboundries.clientWidth
+            var translatey = y / mapboundries.clientHeight
+
+            var translatex = translatex * zoomerimg.clientWidth-150
+            var translatey = translatey * zoomerimg.clientHeight-150
+            zoomerimg.style.transform = 'translateX(-' + translatex + 'px)'
+            zoomerimg.style.transform += 'translateY(-' + translatey + 'px)'
+
+        }
+        function mappress() {
+            if (zoomer.style.display == "inline") {
+                zoomer.style.display = "none"
+            } else {
+                zoomer.style.display = "inline"
+            }
+        }
+        slider.oninput = function() {
+            output.style.width = this.value*100 + "%";
+        }
+
+    </script>
+</body>
+</html>
