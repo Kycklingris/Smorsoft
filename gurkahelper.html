@@ -6,7 +6,20 @@
     <title>Smorsoft™ - Gurkahelper</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Fullcalendar/main.css">
+    <script src="Fullcalendar/main.js"></script>
     <script src="main.js"></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
     <link rel="icon" href="Images/tobbeg.png">
 </head>
 <body>
@@ -42,7 +55,7 @@
         <h1 class = "main-title">Välkommen</h1>
         <div class = "spacer"></div>
         <p class = "main-par">
-            
+            <div id = "calendar"></div>
         </p>
     </div>
     </div> 
